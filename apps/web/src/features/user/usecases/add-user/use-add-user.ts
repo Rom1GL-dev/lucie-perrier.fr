@@ -1,6 +1,6 @@
 import { useMutation } from '@tanstack/react-query';
 import { fetcher } from '@/lib/fetcher';
-import { AddUserDto } from 'api/dist/modules/users/dto/add-user.dto';
+import { AddUserDto } from './add-user.dto';
 
 const BASE_URL = '/v1/users';
 

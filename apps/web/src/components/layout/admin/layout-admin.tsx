@@ -1,6 +1,20 @@
 'use client';
-import { Header } from '@/components/layout/admin/header';
-import { Sidebar } from '@/components/layout/admin/sidebar';
+
+import dynamic from 'next/dynamic';
+
+const Sidebar = dynamic(
+  () => import('@/components/layout/admin/sidebar').then((m) => m.Sidebar),
+  {
+    ssr: false
+  }
+);
+
+const Header = dynamic(
+  () => import('@/components/layout/admin/header').then((m) => m.Header),
+  {
+    ssr: false
+  }
+);
 
 export default function LayoutAdmin({
   children,
