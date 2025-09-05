@@ -19,7 +19,6 @@ export const Faq = () => {
           className="absolute top-40 right-20 h-24 w-24 animate-pulse rounded-full bg-[#667467]/15"
           style={{ animationDelay: '1s' }}
         ></div>
-        $
       </div>
 
       <div className="relative p-10">

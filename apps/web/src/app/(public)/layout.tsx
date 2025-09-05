@@ -12,8 +12,15 @@ export default function VitrineLayout({
   useEffect(() => {
     const style = document.createElement('style');
     style.innerHTML = `
+      /* Masque le logo Next.js Dev en bas à gauche */
       .next-dev-overlay-button {
         display: none !important;
+      }
+
+      /* Masque les toasts de dev si besoin */
+      .nextjs-toast {
+        display: none !important;
+        opacity: 0 !important;
       }
     `;
     document.head.appendChild(style);
