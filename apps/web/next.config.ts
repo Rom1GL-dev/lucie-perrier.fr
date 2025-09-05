@@ -6,9 +6,8 @@ const nextConfig: NextConfig = {
     // Désactive le Next.js Dev Overlay
     removeConsole: true
   },
-  devIndicators: {
-    buildActivity: false // enlève le petit badge animé en bas à gauche
-  },
+  devIndicators: false,
+
   images: {
     remotePatterns: [
       {
