@@ -1,6 +1,10 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
+#__next_dev_overlay {
+  display: none !important;
+}
+
 @custom-variant dark (&:is(.dark *));
 
 :root {
