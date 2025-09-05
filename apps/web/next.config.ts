@@ -1,8 +1,14 @@
 import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
-  output: 'standalone', // <-- Ajouté pour la build standalone
-
+  reactStrictMode: true,
+  compiler: {
+    // Désactive le Next.js Dev Overlay
+    removeConsole: true
+  },
+  devIndicators: {
+    buildActivity: false // enlève le petit badge animé en bas à gauche
+  },
   images: {
     remotePatterns: [
       {
