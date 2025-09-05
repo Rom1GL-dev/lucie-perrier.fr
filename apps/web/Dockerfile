@@ -49,4 +49,4 @@ COPY --from=builder /app/apps/web/node_modules ./node_modules
 EXPOSE 3000
 
 # Lancer Next.js avec le binaire global
-CMD ["next", "start"]
+CMD ["node", ".next/server/main.js"]
