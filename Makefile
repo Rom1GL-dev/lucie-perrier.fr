@@ -1,4 +1,4 @@
-DOCKER_COMPOSE := docker compose -f docker/docker-compose.dev.yml --env-file .env
+DOCKER_COMPOSE := docker compose -f docker/docker-compose.prod.yml --env-file .env
 
 .PHONY: start stop logs stats pull
 
