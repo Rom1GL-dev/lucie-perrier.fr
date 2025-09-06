@@ -46,7 +46,7 @@ export const Blogs = () => {
             </p>
           </div>
 
-          <div className="flex flex-col items-center justify-center py-20">
+          <div className="flex flex-col items-center justify-center py-20 text-center">
             <div
               className="mb-6 flex h-24 w-24 items-center justify-center rounded-full"
               style={{ backgroundColor: '#353F34' }}

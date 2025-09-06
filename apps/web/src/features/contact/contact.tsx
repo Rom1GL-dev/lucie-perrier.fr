@@ -72,11 +72,11 @@ const Contact: React.FC = () => {
         <div className="absolute -bottom-40 -left-40 h-80 w-80 rounded-full bg-[#353F34] opacity-10"></div>
       </div>
 
-      <div className="relative p-10">
+      <div className="relative py-10 md:p-10">
         <Title title="Contact" />
 
         <div
-          className="relative mx-auto max-w-7xl px-6 pb-16 lg:px-8"
+          className="relative mx-auto px-6 pb-16 md:max-w-7xl lg:px-8"
           data-aos="fade-up"
           data-aos-delay="100"
         >
