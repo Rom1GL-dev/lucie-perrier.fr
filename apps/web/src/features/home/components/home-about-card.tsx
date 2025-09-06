@@ -5,11 +5,7 @@ import { routes } from '@/config/routes.config';
 
 export function HomeAboutCard() {
   return (
-    <div
-      className="rounded-3xl border border-gray-100 bg-white/80 p-8 shadow-2xl backdrop-blur-sm lg:p-12"
-      data-aos="fade-up"
-      data-aos-delay="150"
-    >
+    <div className="rounded-3xl border border-gray-100 bg-white/80 p-8 shadow-2xl backdrop-blur-sm lg:p-12">
       <div className="flex flex-col items-center justify-center gap-12 lg:flex-row lg:items-start">
         <div className="group relative">
           <div className="absolute -inset-4 rounded-2xl bg-gradient-to-r from-[#353F34]/20 to-[#667467]/20 blur-xl transition-all duration-300 group-hover:blur-2xl"></div>
