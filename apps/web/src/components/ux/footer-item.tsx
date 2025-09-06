@@ -1,7 +1,6 @@
 'use client';
 
 import React from 'react';
-import Image from 'next/image';
 import { clsx } from 'clsx';
 
 interface Props {
@@ -18,13 +17,14 @@ export default function FooterItem({ alt, image, description, size }: Props) {
         'whitespace-nowrap': alt === 'siret'
       })}
     >
-      <Image
+      <img
         src={image}
         title={alt}
         alt={alt}
         height={size}
         width={size}
-        className={'mr-4'}
+        className="mr-4"
+        loading="lazy"
       />
       {description}
     </div>
