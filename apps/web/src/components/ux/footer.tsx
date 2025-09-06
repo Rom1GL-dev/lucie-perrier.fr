@@ -16,10 +16,12 @@ export const Footer = observer(() => {
           <Link href={routes.public.home.getHref()}>
             <Image
               src="/images/home-logo.svg"
-              title={'Logo home'}
+              title="Logo home"
               alt="Logohome"
               width={350}
               height={350}
+              style={{ width: '100%', height: 'auto' }}
+              sizes="(max-width: 768px) 150px, 350px"
             />
           </Link>
           <div className="mt-5 flex items-center justify-center md:mt-8">

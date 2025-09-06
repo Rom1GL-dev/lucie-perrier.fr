@@ -9,14 +9,14 @@ export const Home = () => {
   return (
     <>
       <div className="relative flex items-center justify-center">
-        <div className="absolute inset-0 flex justify-center">
+        <div className="absolute inset-0 mx-auto flex w-[400px] justify-center md:w-1/2">
           <Image
             src="/images/home-logo.svg"
             alt="Logo"
             title="HomeLogo"
             width={300}
             height={150}
-            className={'w-1/2'}
+            className={'h-full w-full'}
             priority
             data-aos="fade-up"
             data-aos-delay="100"
