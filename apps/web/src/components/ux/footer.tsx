@@ -105,9 +105,8 @@ export const Footer = observer(() => {
             size={25}
             image="/icons/location.svg"
             description={
-              <div className="flex gap-x-1">
-                <div className="font-500">Consultations</div>
-                <div className="font-light">à distance (visio) </div>
+              <div className="flex justify-start gap-x-1">
+                <div className="font-500">Consultations à distance (visio)</div>
               </div>
             }
           />

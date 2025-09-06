@@ -32,13 +32,19 @@ export default function Tarifications() {
             <div className="ml-3 flex-1 md:flex md:justify-between">
               <div>
                 <p className="text-sm text-blue-700">
-                  Le règlement peut se faire par espèces, chèques ou virement.
+                  La prise de rendez-vous s’effectue via la plate-forme
+                  Calendly. Lors de la validation de votre rendez-vous, une
+                  interface de paiement sécurisé (Stripe) vous sera proposée
+                  pour valider votre créneau.
                 </p>
 
                 <p className="mt-2 text-sm text-blue-700">
-                  Un message de rappel vous est envoyé 24h avant la
-                  consultation, suivi d’un lien pour accéder à la
-                  visioconférence.
+                  Un lien de visioconférence vous sera transmis dès votre
+                  paiement pour vous connecter le jour J.
+                </p>
+                <p className="mt-2 text-sm text-blue-700">
+                  Un message de rappel vous sera envoyé 24h avant la
+                  consultation.
                 </p>
               </div>
             </div>
