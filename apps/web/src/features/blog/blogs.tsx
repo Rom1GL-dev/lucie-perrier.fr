@@ -38,7 +38,7 @@ export const Blogs = () => {
           ></div>
         </div>
 
-        <div className="relative z-10 p-10">
+        <div className="relative p-10">
           <div className="mb-12 text-center">
             <Title title="Blogs" />
             <p className="mx-auto mt-6 max-w-2xl text-lg text-gray-600">
