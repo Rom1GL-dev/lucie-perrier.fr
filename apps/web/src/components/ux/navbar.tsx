@@ -158,7 +158,7 @@ export default function Navbar() {
                   )}
                 </a>
                 {item.subItems && openDropdown === item.label && (
-                  <ul className="absolute left-0 mt-2 translate-y-0 transform rounded bg-white p-2 text-[#353F34] shadow-lg transition-transform duration-300 ease-in-out">
+                  <ul className="w-full transform rounded bg-white p-2 text-[#353F34] shadow-lg transition-transform duration-300 ease-in-out lg:absolute lg:left-0 lg:mt-2 lg:w-auto lg:translate-y-0">
                     {item.subItems.map((subItem) => (
                       <li key={subItem.label} className="py-1">
                         <a
