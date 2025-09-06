@@ -20,7 +20,7 @@ export const Blogs = () => {
   if (!blogs || blogs.length === 0) {
     return (
       <div
-        className="relative min-h-screen overflow-hidden"
+        className="relative overflow-hidden"
         style={{ backgroundColor: '#f8f9fa' }}
       >
         <div className="absolute inset-0 overflow-hidden">

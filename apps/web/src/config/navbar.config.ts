@@ -19,7 +19,7 @@ export const navbar: TNavbar[] = [
     ]
   },
   {
-    label: 'Blog',
+    label: 'Blogs',
     href: routes.public.blog.getHref()
   },
   {
