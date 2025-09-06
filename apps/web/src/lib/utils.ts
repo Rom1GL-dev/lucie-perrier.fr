@@ -6,10 +6,16 @@ export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
 }
 
-export function getPhoneForm(telephone: string | undefined) {
+export function getPhoneForm(telephone: string | undefined): string {
   if (!telephone) return 'Aucun téléphone';
-  const localNumber = telephone.replace(/^\+33/, '');
-  return `0${localNumber.slice(0, 1)} ${localNumber.slice(1, 3)} ${localNumber.slice(3, 5)} ${localNumber.slice(5, 7)} ${localNumber.slice(7, 9)}`;
+
+  // Normalise : enlève les espaces et remplace +33 par 0
+  const normalized = telephone.replace(/\s+/g, '').replace(/^\+33/, '0');
+
+  // Découpe en blocs de 2 chiffres
+  const parts = normalized.match(/.{1,2}/g) ?? [];
+
+  return parts.join(' ').trim();
 }
 
 export const stripHtmlTags = (html: string): string => {
